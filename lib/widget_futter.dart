@@ -5,7 +5,6 @@ import 'media_dq.dart';
 
 final Widget futter = Column(
   children: [
-    //SizedBox(height: 5.0),
     Padding(
       padding: EdgeInsets.symmetric(horizontal: myW / 20.55), // 20
       child: Row(
@@ -15,14 +14,12 @@ final Widget futter = Column(
           Expanded(
             flex: 3,
             child: Container(
-              //color: Colors.red,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Flexible(
                     child: Container(
-                      //color: Colors.blue,
                       width: myW / 20,
                       height: myW / 20,
                       child: Image.asset('images/gps.png'),
@@ -31,7 +28,6 @@ final Widget futter = Column(
                   Container(
                     width: myW / 60,
                     height: myW / 60,
-                    //color: Colors.white,
                   ),
                   //Icon(Icons.add_location),
                   Text(
@@ -46,8 +42,6 @@ final Widget futter = Column(
           Expanded(
             flex: 8,
             child: Container(
-              //height: 20.0,
-              //color: Colors.blue,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -62,7 +56,6 @@ final Widget futter = Column(
                                     time == 1 ? Colors.green : Colors.black)),
                       ),
                     ),
-                    //margin: const EdgeInsets.all(30.0),
                     padding: time == 1
                         ? const EdgeInsets.all(5.0)
                         : const EdgeInsets.all(0),
@@ -180,10 +173,8 @@ final Widget futter = Column(
             flex: 2,
             child: Flexible(
               child: Container(
-                //color: Colors.green,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
                       width: 1.0,
@@ -202,6 +193,5 @@ final Widget futter = Column(
         ],
       ),
     ),
-    //SizedBox(height: 5.0),
   ],
 );

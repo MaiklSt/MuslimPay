@@ -28,7 +28,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          //shadowColor: Colors.white,
           elevation: 0.0,
           backgroundColor: Colors.white24,
 
@@ -60,15 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.black,
               ),
               Expanded(
-                child: Container(
-                  //color: Colors.blue,
-                  width: double.infinity,
-                  // height: double.infinity,
+                child: Container(                 
+                  width: double.infinity,                  
                   child: new ListView.builder(
                       itemCount: 4,
                       itemBuilder: (BuildContext context, int position) {
                         final index = position;
-                        //String num = 'images/' + index + '.png';
                         return new ListTile(
                           contentPadding: EdgeInsets.zero,
                           title: Column(
